@@ -1,0 +1,37 @@
+@font-face {
+  font-family: "AndaleMono";
+  src: url("./AndaleMono.ttf");
+}
+
+body {
+  font-family: "AndaleMono";
+}
+
+nav > ul {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  li {
+    ul {
+      display: flex;
+    }
+    a {
+      display: block;
+      text-decoration: none;
+      color: black;
+      font-size: 18px;
+      font-weight: bold;
+      padding: 20px;
+      &:hover {
+        background: url(../images/nav_bg.svg) no-repeat center 10px;
+        background-size: contain;
+      }
+    }
+    &.active {
+      background: url(../images/nav_bg.svg) no-repeat center 10px;
+      background-size: contain;
+    }
+  }
+}
