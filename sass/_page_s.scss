@@ -12,7 +12,6 @@
     top: 69px;
   }
   .start {
-    max-width: 100%;
     text-align: center;
     & > p {
       margin-bottom: 50px;
@@ -53,7 +52,6 @@
     }
   }
   .work {
-    display: none;
     button {
       background-color: #ffa9a9;
     }
@@ -65,8 +63,8 @@
   }
   .work,
   .break {
-    display: none;
     text-align: center;
+    display: none;
     p {
       font-size: 24px;
       letter-spacing: 3px;

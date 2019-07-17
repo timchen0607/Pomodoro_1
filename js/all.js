@@ -38,14 +38,18 @@ $(function() {
     e.preventDefault();
     $(".work")
       .siblings()
-      .fadeOut(500);
-    $(".work").fadeIn(500);
+      .fadeOut(300);
+    $(".work")
+      .delay(300)
+      .fadeIn(500);
   });
   $(".work span,.break span").click(function(e) {
     e.preventDefault();
     $(".start")
       .siblings()
-      .fadeOut(500);
-    $(".start").fadeIn(500);
+      .fadeOut(300);
+    $(".start")
+      .delay(300)
+      .fadeIn(500);
   });
 });
