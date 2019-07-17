@@ -5,4 +5,18 @@
   top: 98px;
   bottom: 0;
   user-select: none;
+  transition: 0.5s;
+  .container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    ul > li {
+      h5 {
+        font-size: 24px;
+        letter-spacing: 2.71px;
+        padding: 24px;
+        cursor: pointer;
+      }
+    }
+  }
 }

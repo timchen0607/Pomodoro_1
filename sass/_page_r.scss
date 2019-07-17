@@ -5,4 +5,38 @@
   top: 98px;
   bottom: 0;
   user-select: none;
+  transition: 0.5s;
+  .container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -178px -170px;
+    text-align: center;
+    display: flex;
+    div {
+      padding: 20px;
+      h5 {
+        font-size: 24px;
+        margin-bottom: 36px;
+        letter-spacing: 1.81px;
+        &.w_h5 {
+          color: #da701f;
+        }
+        &.b_h5 {
+          color: #2194d0;
+        }
+      }
+      ul > li {
+        font-size: 24px;
+        padding: 12px;
+        letter-spacing: 1.81px;
+        cursor: pointer;
+        &:hover,
+        &.active {
+          background: url(../images/nav_bg.svg) no-repeat center 10px;
+          background-size: contain;
+        }
+      }
+    }
+  }
 }

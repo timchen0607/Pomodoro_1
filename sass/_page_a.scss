@@ -5,4 +5,29 @@
   top: 98px;
   bottom: 0;
   user-select: none;
+  transition: 0.5s;
+  .container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -106px -201px;
+    text-align: center;
+    display: flex;
+    div {
+      padding: 20px;
+      h5 {
+        font-size: 24px;
+        margin-bottom: 64px;
+        letter-spacing: 2.71px;
+      }
+      p {
+        font-size: 81px;
+        span {
+          font-size: 18px;
+          letter-spacing: 1.81px;
+          opacity: 0.5;
+        }
+      }
+    }
+  }
 }

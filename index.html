@@ -4,13 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Pomodoro</title>
+    <title>Pomodoro_1</title>
 
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
     />
-    <link rel="stylesheet" href="./css/all.css" />
+    <link rel="stylesheet" href="./css/all.min.css" />
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/55017d12e9.js"></script>
@@ -21,34 +21,81 @@
       <ul>
         <li>
           <ul>
-            <li><a href="#">To-do list</a></li>
-            <li><a href="#">Analytics</a></li>
-            <li><a href="#">Ringtones</a></li>
+            <li class="nav_btn nav_t"><a href="#">To-do list</a></li>
+            <li class="nav_btn nav_a"><a href="#">Analytics</a></li>
+            <li class="nav_btn nav_r"><a href="#">Ringtones</a></li>
           </ul>
         </li>
-        <li class="active"><a href="#">Start directly</a></li>
+        <li class="nav_btn nav_s active"><a href="#">Start directly</a></li>
       </ul>
     </nav>
-    <div class="page_t">aaa</div>
-    <div class="page_a">bbb</div>
-    <div class="page_r">ccc</div>
-    <div class="page_s">
-      <div class="start">
-        <p>Ok, let’s <button>Start</button></p>
-        <div>
-          <p>Work for <span class="orange">25 min</span></p>
-          <p>break for <span class="blue">5 min</span></p>
+    <div class="page">
+      <div class="page_t">
+        <div class="container">
+          <ul>
+            <li>
+              <h5><i class="far fa-circle"></i> Exercise</h5>
+            </li>
+            <li>
+              <h5><i class="far fa-circle"></i> Finish homework</h5>
+            </li>
+          </ul>
         </div>
       </div>
-      <div class="work">
-        <p>Now, be focused.</p>
-        <button id="work_pause"><i class="fas fa-pause"></i></button>
-        <p>or... <span id="work_stop">Give up</span></p>
+      <div class="page_a">
+        <div class="container">
+          <div class="today">
+            <h5>Today</h5>
+            <p>3<span>/tomato</span></p>
+          </div>
+          <div class="week">
+            <h5>Week</h5>
+            <p>16<span>/tomato</span></p>
+          </div>
+        </div>
       </div>
-      <div class="break">
-        <p>Good job. Time for a coffee.</p>
-        <button id="break_pause"><i class="fas fa-pause"></i></button>
-        <p>or... <span id="break_stop">Done</span></p>
+      <div class="page_r">
+        <div class="container">
+          <div class="break">
+            <h5 class="w_h5">Work</h5>
+            <ul>
+              <li>None</li>
+              <li class="active">Default</li>
+              <li>Rock</li>
+              <li>Pop</li>
+              <li>Jazz</li>
+            </ul>
+          </div>
+          <div class="break">
+            <h5 class="b_h5">Break</h5>
+            <ul>
+              <li>None</li>
+              <li class="active">Default</li>
+              <li>Rock</li>
+              <li>Pop</li>
+              <li>Jazz</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="page_s">
+        <div class="start">
+          <p>Ok, let’s <button>Start</button></p>
+          <div>
+            <p>Work for <span class="orange">25 min</span></p>
+            <p>break for <span class="blue">5 min</span></p>
+          </div>
+        </div>
+        <div class="work">
+          <p>Now, be focused.</p>
+          <button id="work_pause"><i class="fas fa-pause"></i></button>
+          <p>or... <span id="work_stop">Give up</span></p>
+        </div>
+        <div class="break">
+          <p>Good job. Time for a coffee.</p>
+          <button id="break_pause"><i class="fas fa-pause"></i></button>
+          <p>or... <span id="break_stop">Done</span></p>
+        </div>
       </div>
     </div>
   </body>
