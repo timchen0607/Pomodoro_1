@@ -4,8 +4,10 @@
   position: absolute;
   top: 98px;
   bottom: 0;
-  user-select: none;
   transition: 0.5s;
+  @media (max-width: 767px) {
+    top: 69px;
+  }
   .container {
     width: 100%;
     max-width: 1000px;
@@ -16,6 +18,9 @@
         letter-spacing: 2.71px;
         padding: 24px;
         cursor: pointer;
+        @media (max-width: 767px) {
+          padding: 16px 10px;
+        }
       }
     }
   }

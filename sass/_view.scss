@@ -7,6 +7,7 @@ body {
   font-family: "AndaleMono";
   overflow-x: hidden;
   background-color: #fffef9;
+  user-select: none;
 }
 
 nav > ul {
@@ -26,14 +27,28 @@ nav > ul {
       font-size: 18px;
       font-weight: bold;
       padding: 20px;
+      i.fas {
+        display: none;
+      }
       &:hover {
         background: url(../images/nav_bg.svg) no-repeat center 10px;
         background-size: contain;
+      }
+      @media (max-width: 767px) {
+        i.fas {
+          display: inline-block;
+        }
+        span {
+          display: none;
+        }
       }
     }
     &.active {
       background: url(../images/nav_bg.svg) no-repeat center 10px;
       background-size: contain;
     }
+  }
+  @media (max-width: 767px) {
+    padding: 5px 0;
   }
 }
